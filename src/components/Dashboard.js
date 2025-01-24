@@ -20,7 +20,7 @@ const Dashboard = () => {
 
     const fetchResults = async () => {
         try {
-            const response = await fetch('http://localhost:5000/fetch-results');
+            const response = await fetch('http://192.168.0.27:5000/fetch-results');
             if (!response.ok) {
                 throw new Error('Failed to fetch results');
             }

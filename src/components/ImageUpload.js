@@ -82,7 +82,7 @@ function ImageUpload() {
         formData.append('file', file);
 
         try {
-            const response = await axios.post('http://127.0.0.1:5000/predict', formData, {
+            const response = await axios.post('http://192.168.0.27:5000/predict', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
 

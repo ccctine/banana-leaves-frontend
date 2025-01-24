@@ -137,7 +137,7 @@ const Results = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:5000/save-result', {
+            const response = await fetch('http://192.168.0.27:5000/save-result', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
